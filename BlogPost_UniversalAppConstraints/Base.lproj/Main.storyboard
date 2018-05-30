@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BlogPost_UniversalAppConstraints" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PLM-HT-znb">
+                                <rect key="frame" x="874" y="-6" width="150" height="800"/>
+                                <color key="backgroundColor" red="0.92581242320000001" green="0.38903585080000003" blue="0.2307613641" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="BBX-Fe-blj"/>
+                                    <constraint firstAttribute="height" constant="600" id="E58-DW-1eD"/>
+                                    <constraint firstAttribute="width" constant="100" id="Xp7-fP-1Xr"/>
+                                    <constraint firstAttribute="width" constant="150" id="Yh0-zi-ucz"/>
+                                    <constraint firstAttribute="width" constant="300" id="fs0-J1-wDs"/>
+                                    <constraint firstAttribute="height" constant="800" id="gEP-cx-YR4"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="BBX-Fe-blj"/>
+                                        <exclude reference="E58-DW-1eD"/>
+                                        <exclude reference="Xp7-fP-1Xr"/>
+                                        <exclude reference="Yh0-zi-ucz"/>
+                                        <exclude reference="fs0-J1-wDs"/>
+                                        <exclude reference="gEP-cx-YR4"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="BBX-Fe-blj"/>
+                                        <include reference="fs0-J1-wDs"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="E58-DW-1eD"/>
+                                        <include reference="Xp7-fP-1Xr"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Yh0-zi-ucz"/>
+                                        <include reference="gEP-cx-YR4"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PLM-HT-znb" secondAttribute="trailing" id="5ls-ND-EN9"/>
+                            <constraint firstItem="PLM-HT-znb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="B4A-eQ-14W"/>
+                            <constraint firstItem="PLM-HT-znb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Gsu-uI-3Rg"/>
+                            <constraint firstItem="PLM-HT-znb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Z1h-SL-BR1"/>
+                            <constraint firstItem="PLM-HT-znb" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="q4W-17-fmG"/>
+                            <constraint firstItem="PLM-HT-znb" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="xS7-rh-6oz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5ls-ND-EN9"/>
+                                <exclude reference="B4A-eQ-14W"/>
+                                <exclude reference="Gsu-uI-3Rg"/>
+                                <exclude reference="Z1h-SL-BR1"/>
+                                <exclude reference="q4W-17-fmG"/>
+                                <exclude reference="xS7-rh-6oz"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="B4A-eQ-14W"/>
+                                <include reference="Z1h-SL-BR1"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Gsu-uI-3Rg"/>
+                                <include reference="xS7-rh-6oz"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="5ls-ND-EN9"/>
+                                <include reference="q4W-17-fmG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+            </objects>
+        </scene>
+    </scenes>
+</document>
